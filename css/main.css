@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #29303b;
+  font-weight: normal;
+}
+
+.myNavBar {
+  border-bottom: 1px solid #cacbcc;
+}
+
+.myNavBar .navbar-brand img {
+  width: 110px;
+}
+
+.myNavBar .categories {
+  font-size: #505763;
+  color: 13px;
+  font-weight: normal;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.myNavBar .input-search {
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+}
+
+.myNavBar .input-search .form-control {
+  background-color: rgba(20, 23, 28, 0.05);
+  border: none;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.myNavBar .input-search .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #fff;
+  font-size: 13px;
+  border-top: 1px solid #cacbcc;
+  border-bottom: 1px solid #cacbcc;
+  border-left: 1px solid #cacbcc;
+}
+
+.myNavBar .input-search .form-control:focus + .input-group-prepend .input-group-text {
+  color: #ec5252;
+  background-color: #fff;
+  border-top: 1px solid #cacbcc;
+  border-bottom: 1px solid #cacbcc;
+  border-right: 1px solid #cacbcc;
+}
+
+.myNavBar .input-search .form-control:focus + .input-group-prepend:hover .input-group-text {
+  color: white;
+  background-color: #ec5252;
+}
+
+.myNavBar .input-group-prepend .input-group-text {
+  background-color: rgba(20, 23, 28, 0.05);
+  color: #ec5252;
+  border: none;
+}
+
+.myNavBar .input-group-prepend:hover .input-group-text {
+  color: white;
+  background-color: #ec5252;
+}
+
+.myNavBar .navbar-nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.myNavBar .navbar-nav .nav-item .nav-link {
+  font-size: 13px;
+  color: #505763;
+  font-weight: normal;
+  padding: 10px 20px;
+}
+
+.myNavBar .navbar-nav .nav-item:hover {
+  background-color: rgba(20, 23, 28, 0.05);
+}
+
+.myNavBar .navbar-nav .nav-item:nth-child(3) {
+  border-radius: 40%;
+}
+
+header {
+  font-size: 13px;
+  color: #505763;
+  font-weight: normal;
+}
+/*# sourceMappingURL=main.css.map */

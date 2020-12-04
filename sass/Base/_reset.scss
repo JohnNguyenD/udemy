@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  @include styleText($fs-0, $color-black-0, $fw-normal);
+}
+
+.myNavBar {
+  border-bottom: 1px solid $color-gray-3;
+  .navbar-brand {
+    img {
+      width: 110px;
+    }
+  }
+  .categories {
+    @include styleText($color-black-light, $fs-1, $fw-normal);
+    align-self: center;
+    flex-grow: 1;
+  }
+  .input-search {
+    flex-grow: 5;
+    .form-control {
+      background-color: $color-gray-1;
+      border: none;
+      transition: none;
+      &:focus {
+        box-shadow: none;
+        background-color: $color-white-0;
+        font-size: 13px;
+        border-top: 1px solid $color-gray-3;
+        border-bottom: 1px solid $color-gray-3;
+        border-left: 1px solid $color-gray-3;
+      }
+      &:focus + .input-group-prepend {
+        .input-group-text {
+          color: $color-red-0;
+          background-color: $color-white-0;
+          border-top: 1px solid $color-gray-3;
+          border-bottom: 1px solid $color-gray-3;
+          border-right: 1px solid $color-gray-3;
+        }
+        &:hover {
+          .input-group-text {
+            color: white;
+            background-color: $color-red-0;
+          }
+        }
+      }
+    }
+  }
+  .input-group-prepend {
+    .input-group-text {
+      background-color: $color-gray-1;
+      color: $color-red-0;
+      border: none;
+    }
+    &:hover {
+      .input-group-text {
+        color: white;
+        background-color: $color-red-0;
+      }
+    }
+  }
+
+  .navbar-nav {
+    justify-content: space-between;
+    width: 100%;
+    .nav-item {
+      .nav-link {
+        @include styleText($fs-1, $color-black-light, $fw-normal);
+        padding: $pd-1 $pd-2;
+      }
+      &:hover {
+        background-color: $color-gray-1;
+      }
+    }
+    .nav-item:nth-child(3) {
+      border-radius: 40%;
+    }
+  }
+}

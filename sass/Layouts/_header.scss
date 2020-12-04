@@ -1,0 +1,39 @@
+header {
+  @include styleText($fs-1, $color-black-light, $fw-normal);
+}
+
+// Responsive
+// max-width: 1200px
+// @include responsive("extra-large") {
+//   .header__right {
+//     .business,
+//     .teach {
+//       display: none;
+//     }
+//   }
+// }
+
+// // max-width: 992px
+// @include responsive("large") {
+//   .header__right {
+//     .ude-btnGroup {
+//       white-space: nowrap;
+//     }
+//   }
+// }
+
+// // max-width: 768px
+// @include responsive("medium") {
+//   .header__right {
+//     .ude-btnGroup {
+//       display: none;
+//     }
+//   }
+//   .header__left {
+//     justify-content: center;
+//     .categories,
+//     .header__form {
+//       display: none;
+//     }
+//   }
+// }
